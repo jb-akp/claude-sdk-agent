@@ -1,4 +1,4 @@
-import asyncio
+import anyio
 import sys
 from ddgs import DDGS
 from claude_agent_sdk import query, ClaudeAgentOptions, AssistantMessage, ResultMessage
@@ -65,4 +65,4 @@ Instructions:
                 print("Report written to output.md")
 
 
-asyncio.run(main())
+anyio.run(main)
